@@ -12,6 +12,7 @@
     "date-and-time": "^0.13.1",
     "express": "^4.17.1",
     "google-translate-cn-api": "^1.0.6",
+    "he": "^1.2.0",
     "stdio": "^2.1.1"
   }
 }

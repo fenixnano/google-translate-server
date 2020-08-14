@@ -3,6 +3,7 @@ const stdio = require("stdio");
 const express = require("express");
 const date = require("date-and-time");
 const bodyParser = require('body-parser');
+const he = require('he');
 
 const app = express();
 
@@ -46,8 +47,8 @@ function log(req, text, status) {
 
 // express server
 app.get("/", function (req, res) {
-  const text = req.query.text;
-  delete req.query.text;
+  const text = he.decode(req.query.text);
+  // delete req.query.text;
 
   translate(text, {
       ...{
@@ -67,8 +68,8 @@ function logPost(req, text, status) {
 }
 
 app.post("/", function (req, res) {
-  const text = req.body.text;
-  delete req.body.text;
+  const text = he.decode(req.body.text);
+  // delete req.body.text;
 
   translate(text, {
       ...{
