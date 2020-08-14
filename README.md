@@ -1,6 +1,6 @@
 # Google Translate Server
 
-![](https://img.shields.io/badge/build-passing-success) ![](https://img.shields.io/badge/language-nodejs-orange.svg) [![](https://img.shields.io/badge/docker-ready-orange)](https://hub.docker.com/r/johndope/google-translate-server) [![](https://img.shields.io/docker/pulls/johndope/google-translate-server.svg)](https://hub.docker.com/r/johndope/google-translate-server) ![](http://img.shields.io/badge/license-MIT-lightgrey)
+![](https://img.shields.io/badge/build-passing-success) ![](https://img.shields.io/badge/language-nodejs-orange.svg) [![](https://img.shields.io/badge/docker-ready-orange)](https://hub.docker.com/r/mashirozx/google-translate-server) [![](https://img.shields.io/docker/pulls/mashirozx/google-translate-server.svg)](https://hub.docker.com/r/mashirozx/google-translate-server) ![](http://img.shields.io/badge/license-MIT-lightgrey)
 
 A express.js server wrapper for [google-translate-cn-api
 ](https://www.npmjs.com/package/google-translate-cn-api)
@@ -47,7 +47,7 @@ curl http://localhost:30031/?text=I spea Dutch!&to=zh-cn
 ## Use docker `Recommended`
 
 ```shell
-docker run -it --rm -p 30031:30031 -e "DOMAIN=cn" johndope/google-translate-server
+docker run -it --rm -p 30031:30031 -e "DOMAIN=cn" mashirozx/google-translate-server
 ```
 
 ## Run directly
@@ -122,7 +122,7 @@ It's worth mention that, with `google-translate-cn-api`, you can now specify som
 
 **Github:** [John-Theo/google-translate-server](https://github.com/John-Theo/google-translate-server)
 
-**Docker Hub:** [johndope/google-translate-server](https://hub.docker.com/r/johndope/google-translate-server/)
+**Docker Hub:** [mashirozx/google-translate-server](https://hub.docker.com/r/mashirozx/google-translate-server/)
 
 ## License
 
