@@ -37,6 +37,6 @@ jobs:
           context: .
           platforms: linux/arm64,linux/amd64
           push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ steps.meta.outputs.tags }}
+          tags: latest
           cache-from: type=registry,ref=mashirozx/google-translate-server:latest
           cache-to: type=inline
