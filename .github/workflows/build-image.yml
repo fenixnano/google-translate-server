@@ -25,7 +25,7 @@ jobs:
       - uses: docker/metadata-action@v3
         id: meta
         with:
-          images: fenixnano/google-translate-serverv
+          images: fenixnano/google-translate-server
           flavor: |
             latest=auto
           tags: |
