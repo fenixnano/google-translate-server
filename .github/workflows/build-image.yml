@@ -38,5 +38,5 @@ jobs:
           platforms: linux/arm64,linux/amd64
           push: ${{ github.event_name != 'pull_request' }}
           tags: latest
-          cache-from: type=registry,ref=mashirozx/google-translate-server:latest
+          cache-from: type=registry,ref=fenixnano/google-translate-server:latest
           cache-to: type=inline
